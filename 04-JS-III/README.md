@@ -18,7 +18,7 @@
 
 En esta lección cubriremos:
 
-* Introducción a los arrays
+* Introducción a los arrays uwu
 * Bucles ***for*** con arrays
 
 <div class="iframeContainer">
