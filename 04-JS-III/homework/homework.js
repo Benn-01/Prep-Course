@@ -130,7 +130,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  let contador = 0
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] > 19){
+      contador = contador + 1;
+    }  
+  }
+  return contador
 }
 
 
@@ -155,7 +161,12 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  for(let i = 0; i < (arreglo.length - 1); i++){
+    if (arreglo[i] != arreglo[i+1]){
+      return false;
+    }
+    }
+  return true;
 } 
 
 
@@ -164,6 +175,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var mesesSi = []
+  for(let i = 0; i < array.length; i++){
+    if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
+      mesesSi.push(array[i]);
+    }
+  if (mesesSi.includes("Enero" && "Marzo" && "Noviembre")){
+      return mesesSi;
+    }
+  }
+  return "No se encontraron los meses perdidos";
 }
 
 
@@ -171,6 +192,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var numMayor = []
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 100){;
+      numMayor.push(array[i]);
+    }
+  }
+  return numMayor;
 }
 
 
@@ -182,6 +210,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var listaAumentado = [];
+  for(let i = 0; i < 10; i++){
+    numero = numero + 2;
+    listaAumentado[i] = numero;
+    if (i == numero){
+      return "Se interrumpió la ejecución";
+    }
+  }
+  return listaAumentado;
 }
 
 
